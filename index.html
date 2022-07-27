@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO APP Firebase</title>
+  </head>
+
+  <body>
+    <div class="login">
+      <h2>Faça Login no App</h2>
+      <p>Nosso App usa Firebase para efetuar o Login</p>
+      <form>
+        <input type="email" name="email" id="" />
+        <input type="password" name="password" id="" />
+        <input type="submit" name="acao" value="Login!" />
+      </form>
+    </div>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"
+    ></script>
+
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"
+    ></script>
+    <script
+      defer
+      src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"
+    ></script>
+
+    <!-- <script defer src="./init-firebase.js"></script> -->
+
+    <script type="module">
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.1/firebase-app.js";
+      const firebaseConfig = {
+        apiKey: "AIzaSyDQyC5qssZ8cKen76A8IGlfvMWkOigfYhs",
+        authDomain: "todolist-ff9d7.firebaseapp.com",
+        projectId: "todolist-ff9d7",
+        storageBucket: "todolist-ff9d7.appspot.com",
+        messagingSenderId: "938379293275",
+        appId: "1:938379293275:web:132b4e87caf15cecd4857e",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+
+      //Inicio do primeiro App Firebase
+    </script>
+  </body>
+</html>
